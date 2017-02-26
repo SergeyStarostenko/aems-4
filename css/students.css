@@ -1,0 +1,245 @@
+
+.icon-back {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  z-index: 1000;
+  cursor: pointer;
+  height: 30px;
+}
+
+.icon-back>img {
+  width: 40px;
+}
+
+.icon-back>p {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "KelsonSansLight";
+  font-size: 20px;
+}
+
+.container-fluid{
+  height: 100vh;
+}
+
+.students_title {
+    position: relative;
+    width: 240px;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "KelsonSansRegular";
+        transition: all .5s ease-in-out;
+}
+
+.students_title {
+  margin-bottom: 10px;
+}
+
+.students_title h1 {
+    font-size: 35px;
+    padding-bottom: 3px;
+    color: #FFD10E;
+}
+
+.students_title > span{
+    width: 240px;
+    height: 3px;
+    margin: auto;
+    display: block;
+}
+
+.students_title > span {
+  background-color: #F15A5A;
+  margin-top: 5px;
+}
+
+.students {
+  background-image: url(../img/bg2.jpg);
+  background-repeat: repeat;
+  padding-top: 0;
+}
+.students_container {
+  text-align: center;
+  padding: 15px;
+  font-family: "KelsonSansRegular";
+}
+.students_container_img:hover {
+  border: 3px solid #fff;
+  transition: all .5s;
+}
+
+.students_container_img {
+  background-color: #000;
+  border: 3px solid #FFD10E;
+  transition: all .5s;
+}
+/* Common style */
+.grid figure {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 240px;
+  text-align: center;
+  cursor: pointer;
+}
+.bg_img_1, 
+.bg_img_2, 
+.bg_img_3, 
+.bg_img_4, 
+.bg_img_5, 
+.bg_img_6 {
+  background-position: center;
+  background-size: cover;
+}
+.bg_img_1 {
+  background-image: url(../img/img001.jpg);
+}
+.bg_img_2 {
+  background-image: url(../img/img002.jpg);
+}
+.bg_img_3 {
+  background-image: url(../img/img003.jpg);
+}
+.bg_img_4 {
+  background-image: url(../img/img004.jpg);
+}
+.bg_img_5 {
+  background-image: url(../img/img005.jpg);
+}
+.bg_img_6 {
+  background-image: url(../img/img006.jpg);
+}
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.grid figure {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  /*background-color: rgba(48, 133, 163, .5); - наложение затемняющего фона поверх картинки*/
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        transition: background-color 0.3s
+}
+.grid figure:hover {
+  background-color: rgba(0, 0, 0, .5);
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        transition: background-color 0.3s
+}
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.grid figure h2 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
+/*---------------*/
+/***** Marley *****/
+/*---------------*/
+figure.effect-marley figcaption {
+  text-align: right;
+}
+figure.effect-marley h2,
+figure.effect-marley p {
+  position: absolute;
+  right: 20px;
+  left: 20px;
+  padding: 10px 0;
+}
+figure.effect-marley p {
+  bottom: 20px;
+  line-height: 1.5;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+  background-color: #F15A5A;
+  padding-right: 10px;
+  padding-left: 10px;
+    /*              !!! ВАЖНО!!!!!!
+    В случаи не читабельного слова из-за неправильного 
+    отображения переноса следует использовать спецсимвол -> &shy; <- в HTML
+    следовательно для создания динамическкой страницы на PHP этот спецсимвол 
+    необходимо записывать в код PHP
+    */
+    overflow-wrap: break-word;  /* не поддерживает IE, Firefox; является копией word-wrap */ 
+    word-wrap: break-word;
+    word-break: break-all;
+    -webkit-hyphens: auto; 
+    -ms-hyphens: auto; 
+    hyphens: auto; 
+}
+figure.effect-marley h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,65px,0);
+  transform: translate3d(0,65px,0);
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  text-shadow: -1px 1px rgba(0,0,0,.5)
+}
+figure.effect-marley:hover h2 {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+figure.effect-marley h2::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  content: '';
+  -webkit-transform: translate3d(0,40px,0);
+  transform: translate3d(0,40px,0);
+}
+figure.effect-marley h2::after,
+figure.effect-marley p {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+figure.effect-marley:hover h2::after,
+figure.effect-marley:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}

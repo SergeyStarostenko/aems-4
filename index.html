@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/reset.css" rel="stylesheet"> <!-- CSS reset -->
+  <link href="./css/style-home.css" rel="stylesheet"> <!-- Resource style-home -->
+  <link href="./css/media.css" rel="stylesheet"> <!-- Resource style media-->
+  <link href="./css/fonts.css" rel="stylesheet"> <!-- Resource style fonts-->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/pace.min.js"></script>
+  <script src="https://use.fontawesome.com/bfcb811896.js"></script>
+  <title>Сайт Кафедры АЭМС</title>
+</head>
+<body>
+<!-- Начало верстки ГЛАВНОЙ страницы-->
+  <header>
+      <div id="video-bg">
+          <video width="100%" height="auto" id="video">
+              <source src="./videoFon-1.mp4" type="video/mp4"></source>
+              <!--<source src="./fon2.webm" type="video/webm"></source>-->
+          </video>
+      </div>
+      <div class="bg-color" id="filter">
+        <span class="logo displayBlock" id="logo"></span>
+        <div class="buttonMenu displayBlock" id="buttonOpenMenu"><button>Узнать больше</button></div>
+      </div>
+  </header>
+  <section class="displayNone menu" id="Menu">
+    <div class="topMenu">
+      <span class="displayBlock" id="obl-1"><i class="fa fa-times" aria-hidden="true" id="buttonCloseMenu"></i></span>
+      <span class="displayNone" id="obl-2"><i class="fa fa-arrow-left" aria-hidden="true" id="buttonOneBack"></i></span>
+      <h1>Меню</h1>
+      <span><i class="fa fa-user-circle" aria-hidden="true" id="buttonLogin"></i></span>
+    </div>
+    <section class="container">
+      <div class="mainMenu" id="mainMenu">
+        <ul class="flex-item">
+          <span class="icon-1"></span>
+          <li>Все новости</li>
+          <li>Для абитуриентов</li>
+          <li>Для студентов</li>
+        </ul>
+        <ul class="flex-item">
+          <span class="icon-2"></span>
+          <li>Как поступить?</li>
+          <li>Образование</li>
+          <li>Общежитие</li>
+        </ul>
+        <ul class="flex-item">
+          <span class="icon-3"></span>
+          <li>Олимпиады</li>
+          <li>Научные исследования</li>
+          <li>Дипломное проектирование</li>
+        </ul>
+        <ul class="flex-item">
+          <span class="icon-4"></span>
+          <li>Студенческие проекты</li>
+          <li></li>
+          <li></li>
+        </ul>
+        <ul class="flex-item">
+          <span class="icon-5"></span>
+          <li>История</li>
+          <li>Сотрудники</li>
+          <li>Контакты</li>
+        </ul>
+        <ul class="flex-item">
+          <span class="icon-6"></span>
+          <li>Студенческая жизнь</li>
+          <li>Спорт</li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="mainlogin" style="display: none">
+        <section class="registration-animation"></section>
+        <section class="registration-form"></section>
+      </div>
+    </section>
+  </section>
+</body>
+</html>

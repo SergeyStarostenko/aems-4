@@ -1,0 +1,295 @@
+
+/*
+стиль полосы загрузки сайта - начало
+*/
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #FFD10E;
+  position: fixed;
+  z-index: 999999;
+  bottom: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+/*
+стиль полосы загрузки сайта - конец
+*/
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+стиль полосы загрузки сайта - начало
+*/
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #FFD10E;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+/*
+стиль полосы загрузки сайта - конец
+*/
+
+.back {
+	width: 20px;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: 9999999;
+}
+
+.back a img {
+	width: 100%;
+}
+
+#video-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    /*background: url(../img/fon-video.png) no-repeat;*/
+	background-color: #2a2a2a;
+    background-size: cover;
+	background-position: center;
+}
+ 
+#video-bg > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto; 
+}
+ 
+ @supports (object-fit: cover) {
+     #video-bg > video {
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+ }
+
+
+ @media screen and (max-device-width: 600px) {
+    #video-bg > video {
+        display: none;
+        }
+    }
+
+.FitlerColor {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 80;
+}
+
+.FitlerImg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/pattern.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+
+.container {
+	overflow-x: hidden;
+	position: relative;
+}
+
+.container-employees {
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.employees {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	padding: 74px 37px;
+}
+
+header {
+	width: 50%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+.section {
+	padding: 0 37px;
+	position: absolute;
+	top: 50%;
+	margin-top: -200px;
+	width: 100%;
+
+}
+
+.section > li {
+	list-style: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.surname {
+	font-family: "BebasNeueBook";
+	font-size: 5.8em;
+	cursor: pointer;
+	transition: all .5s;
+	letter-spacing: 5px;
+}
+
+.firstlastname {
+	margin-top: 20px;
+	font-size: 3em;
+    letter-spacing: 2px;
+    font-family: "KelsonSansLight";
+}
+
+.line {
+	background-color: #FFD10E;
+    margin: 20px 0;
+    height: 5px;
+}
+
+.post {
+	font-size: 1.4em;
+	font-family: "KelsonSansLight";
+	letter-spacing: 2px;
+	padding-top: 5px;
+}
+
+.link {
+	font-size: 1.8em;
+	font-family: "BebasNeueLight";
+	margin-top: 25px;
+	letter-spacing: 3px;
+}
+
+.link a {
+	border-bottom: 2px solid transparent;
+    padding: 0 5px;
+    padding-bottom: 3px;
+}
+
+.link a:hover {
+	border-bottom: 2px solid #FFD10E;
+}
+
+.photo {
+	width: 50%;
+	height: 100%;
+	float: right;
+	padding: 0 37px;
+	position: relative;
+}
+
+.box-photo {
+	background-color: #ccc;
+	width: 480px;
+	height: 480px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*position: absolute;
+	top: 50%;
+	margin-top: -280px;*/
+	border-radius: 50%;
+	border: 5px solid #FFD10E;
+	background-position: center;
+	background-size: cover;
+}
+
+#employeesPhoto-1 {
+	background-image: url(../img/photoDjobs-1.jpg);
+}
+
+.posLeft {
+	float: left;
+}
+
+.posRight {
+	float: right;
+}
+
+/*scroll bar style star
+заменить на кроссбраузерный стиль!!!!*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #2a2a2a;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2a2a2a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FFD10E;
+}
+
+/*scroll bar style finish*/
